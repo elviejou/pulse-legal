@@ -1,9 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Pulse - Soporte</title></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse · Soporte</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #F5EFE6;
+      color: #2B2622;
+      font-family: -apple-system, Georgia, serif;
+✻ Worked for 5s
+
+※ recap: Estás publicando Pulse en el App Store. Acabás de crear el repo `pulse-legal` en GitHub — el próximo paso es crear los archivos `index.html` y `privacy.html` en ese repo y activar GitHub Pages para tener las URLs de soporte y privacidad que pide Apple.
+
+❯ [Image #35]
+[Image #35]
+
+En el dropdown "None" seleccioná "main" y dale Save. Eso activa GitHub Pages.
+
+Pero primero necesitás subir los archivos index.html y privacy.html al repo. ¿Ya los agregaste o todavía no?
+
+✻ Sautéed for 5s
+
+❯ [Image #36] si ya las habia creado
+[Image #36]
+
+GitHub Pages está activo y publicando desde main. En 1-2 minutos van a estar disponibles estas URLs:
+
+- Soporte: https://elviejou.github.io/pulse-legal/
+- Privacidad: https://elviejou.github.io/pulse-legal/privacy.html
+
+Pegá esas URLs en App Store Connect:
+- URL de soporte → https://elviejou.github.io/pulse-legal/
+- URL de privacidad → https://elviejou.github.io/pulse-legal/privacy.html
+
+Y en Información de la app también pedirá la URL de privacidad — la misma.
+
+✻ Baked for 7s
+
+❯ por favor se puede mejorar la estetica de la pagina haciendola un poquito similar a la app?
+
+Claro. Acá van los dos archivos con la estética de Pulse — paletar cream, Georgia italic, Courier para labels:
+
+⏺ Write(/Users/martinexequiel/Desktop/deployAR/PROYECTOS/PulseApp/pulse-legal-index.html)
+
+Wrote 148 lines to /Users/martinexequiel/Desktop/deployAR/PROYECTOS/PulseApp/pulse-legal-index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse · Soporte</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #F5EFE6;
+      color: #2B2622;
+      font-family: -apple-system, Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 24px 80px;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 48px;
+      color: #2B2622;
+      letter-spacing: -1px;
+      margin-bottom: 4px;
+    }
+
+    .tagline {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: #8C8275;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background-color: #D8CFC0;
+      margin: 0 auto 48px;
+    }
+
+    .card {
+      background-color: #FAF6EE;
+      border: 1px solid #E8DFD0;
+      border-radius: 18px;
+      padding: 36px 40px;
+      max-width: 520px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .card-label {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #8C8275;
+      margin-bottom: 14px;
+    }
+
+    .card h2 {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 26px;
+      color: #2B2622;
+      margin-bottom: 14px;
+      font-weight: normal;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #5A4F45;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    .accent-bar {
+      width: 3px;
+      height: 100%;
+      background-color: #C9BBA0;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .card-inner {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    a {
+      color: #8A7B62;
+      text-decoration: none;
+      border-bottom: 1px solid #C9BBA0;
+    }
+
+    a:hover { color: #2B2622; }
+
+    footer {
+      margin-top: 48px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #B8AE9D;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
-<h1>Pulse - Digital Planner</h1>
-<h2>Soporte</h2>
-<p>Para consultas o soporte escribinos a: <a href="mailto:exequielcalo@gmail.com">exequielcalo@gmail.com</a></p>
+
+  <div class="logo">Pulse</div>
+  <div class="tagline">Digital Planner · deployAR</div>
+  <div class="divider"></div>
+
+  <div class="card">
+    <div class="card-label">Soporte</div>
+    <div class="card-inner">
+      <div class="accent-bar"></div>
+      <h2>¿Necesitás ayuda?</h2>
+      <p>Para consultas, reportar problemas o sugerencias, escribinos a:</p>
+      <p><a href="mailto:exequielcalo@gmail.com">exequielcalo@gmail.com</a></p>
+      <p>Respondemos dentro de las 48 horas hábiles.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-label">Recursos</div>
+    <div class="card-inner">
+      <div class="accent-bar"></div>
+      <h2>Información legal</h2>
+      <p>
+        <a href="privacy.html">Política de Privacidad</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>© 2026 deployAR · Pulse Digital Planner</footer>
+
 </body>
 </html>
